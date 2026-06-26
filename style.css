@@ -1,0 +1,262 @@
+/* #region UTILITIES */
+:root{
+    --color-inglese :#da7a84;
+    --color-inglese-hover:#da7a84c7;
+    --color-italiano :#e4c5c5;
+    --color-italiano-hover :#e4c5c59d;
+    --color-matematica: #cccf85;
+    --color-matematica-hover: #cdcf859d;
+    --color-reti: #dcd578;
+    --color-reti-hover: #dcd5789f;
+    --color-storia: #e4c5c5;
+    --color-storia-hover: #e4c5c59c;
+    --color-tpsit: #95bfa0;
+    --color-tpsit-hover: #95bfa09d;
+    --color-informatica: #78bedc;
+    --color-informatica-hover: #78bedc88;
+    --color-telecomunicazioni: #959bbf;
+    --color-telecomunicazioni-hover: #959bbf9f;
+    --color-ginnastica: #ffffff;
+    --color-ginnastica-hover: #b1b1b185;
+    --color-religione: #8cc88d;
+    --color-religione-hover: #8cc88d98;
+    --color-pranzo: #cea286;
+    --color-pranzo-hover:  #cea28698;
+    --color-giorni: #cecece;
+
+}
+/* #endregion UTILITY */
+
+.title{
+    text-align: center;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+/* #region ORARI */
+
+.orario {
+    display: grid;
+    grid-template-columns: 50px repeat(5, 1fr);
+    grid-template-rows: 40px repeat(10, 70px);
+    border: 3px solid black;
+    font-size: 20px;
+    padding: 1rem;
+    >.giorno{
+        border: 1px solid black;
+        font-style: oblique;
+        font-weight: bold;
+        text-align: center;
+        font-size: 25px;
+        padding-top: 0.4rem;
+        background-color: var(--color-giorni)
+    }
+}
+
+.ora {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.ora-1  { grid-column: 1; grid-row: 2; }
+.ora-2  { grid-column: 1; grid-row: 3; }
+.ora-3  { grid-column: 1; grid-row: 4; }
+.ora-4  { grid-column: 1; grid-row: 5; }
+.ora-5  { grid-column: 1; grid-row: 6; }
+.ora-6  { grid-column: 1; grid-row: 7; }
+.ora-7  { grid-column: 1; grid-row: 8; }
+.ora-8  { grid-column: 1; grid-row: 9; }
+.ora-9  { grid-column: 1; grid-row: 10; }
+.ora-10  { grid-column: 1; grid-row: 11; }
+
+/* #endregion ORARIO */
+
+/* #region MATERIE */
+
+.materia{
+    display: flex;
+    font-size: 18px;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    border: 1px solid black;
+    cursor: pointer;
+    transition:ease-in-out;
+    transition-duration: 200ms;
+}
+
+.inglese {
+    background-color: var(--color-inglese);
+    &:hover{
+        background-color: var(--color-inglese-hover);
+    }
+}
+.inglese-1 { grid-column: 2; grid-row: 2; }
+.inglese-2 { grid-column: 3; grid-row: 6; }
+.inglese-3 { grid-column: 4; grid-row: 5; }
+
+.italiano {
+    background-color: var(--color-italiano);
+    &:hover{
+        background-color: var(--color-inglese-hover);
+    }
+}
+.italiano-1 { grid-column: 3; grid-row: 2 / 4; }
+.italiano-2 { grid-column: 2; grid-row: 9 / 11; }
+
+.matematica{
+    background-color: var(--color-matematica);
+    &:hover{
+        background-color: var(--color-matematica-hover);
+    } 
+}
+.matematica-1 { grid-column: 2; grid-row: 3; }
+.matematica-2 { grid-column: 4; grid-row: 2; }
+.matematica-3 { grid-column: 5; grid-row: 4; }
+.matematica-4 { grid-column: 6; grid-row: 5; }
+
+.reti{
+    background-color: var(--color-reti);
+    &:hover{
+        background-color: var(--color-reti-hover);
+    }
+}
+.reti-1 { grid-column: 2; grid-row: 4 / 6; }
+.reti-2 { grid-column: 5; grid-row: 2 / 4; }
+
+.storia{
+    background-color: var(--color-storia);
+    &:hover{
+        background-color: var(--color-storia-hover);
+    }
+}
+.storia-1 { grid-column: 5; grid-row: 5; }
+.storia-2 { grid-column: 6; grid-row: 2; }
+
+.tpsit{
+    background-color: var(--color-tpsit);
+    &:hover{
+        background-color: var(--color-tpsit-hover);
+    }
+}
+.tpsit-1 { grid-column: 6; grid-row: 3 / 5; }
+.tpsit-2 { grid-column: 3; grid-row: 7; }
+
+.informatica{
+    background-color: var(--color-informatica);
+    &:hover{
+        background-color: var(--color-informatica-hover);
+    }
+}
+.informatica-1 { grid-column: 3; grid-row: 4 / 6; }
+.informatica-2 { grid-column: 4; grid-row: 6 / 8; }
+.informatica-3 { grid-column: 6; grid-row: 6 / 8; }
+
+.telecomunicazioni{
+    background-color: var(--color-telecomunicazioni);
+    &:hover{
+        background-color: var(--color-telecomunicazioni-hover);
+    }
+}
+.telecomunicazioni-1 { grid-column: 2; grid-row: 8; }
+.telecomunicazioni-2 { grid-column: 4; grid-row: 3 / 5; }
+
+.ginnastica{
+    background-color: var(--color-ginnastica);
+    &:hover{
+        background-color: var(--color-ginnastica-hover);
+    }
+}
+.ginnastica-1 { grid-column: 5; grid-row: 6 / 8; }
+
+.religione{
+    background-color: var(--color-religione);
+    &:hover{
+        background-color: var(--color-religione-hover);
+    }
+}
+.religione-1 { grid-column: 2; grid-row: 6; }
+
+.pranzo{
+    background-color: var(--color-pranzo);
+    &:hover{
+        background-color: var(--color-pranzo-hover);
+    }
+}
+.pranzo-1 { grid-column: 2; grid-row: 7; }
+
+.null{
+    border: 1px solid black;
+    grid-column: 2;
+    grid-row: 11;
+}
+
+.void-2 { border: 1px solid black; grid-column: 3; grid-row: 8/12; }
+.void-3 { border: 1px solid black; grid-column: 4; grid-row: 8/12; }
+.void-4 { border: 1px solid black; grid-column: 5; grid-row: 8/12; }
+.void-5 { border: 1px solid black; grid-column: 6; grid-row: 8/12; }
+/* #endregion ORARIO */
+
+
+
+.button1 {
+    padding: 0.6rem 2rem;
+    font-size: 1rem;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    background-color: #e05555;
+    color: white;
+}
+
+.button1:hover {
+    background-color: #c04444;
+}
+
+#modal-sfondo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+    display: none;  /* aggiunto */
+}
+
+#modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;  
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    z-index: 1000;
+    text-align: center;
+    display: none;  /* aggiunto, togli l'animation da qui */
+}
+
+#modal-aula {
+    white-space: pre-line;  /* interpreta \n come a capo */
+}
+
+#modal.aperto {
+    display: block;
+    animation: comparsa 0.2s ease-out;
+}
+
+
+/* ANIMAZIONI */
+@keyframes comparsa {
+    from {
+        opacity: 0;
+        transform: translate(-50%, -50%) scale(0.8);
+    }
+    to {
+        opacity: 1;
+        transform: translate(-50%, -50%) scale(1);
+    }
+}

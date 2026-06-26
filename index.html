@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    
+    <div class="title">
+        <h1>4BI</h1>
+        <h2><a href="https://www.itisartom.edu.it" target="_blank">Istituto Tecnico Industriale A. Artom</a></h2>
+        <h3>Docente coordinatore: Prof. FRANCO Jacopo</h3>
+    </div>
+    <div class="orario">
+        <!-- header -->
+        <div></div>  <!-- cella vuota angolo in alto a sinistra -->
+        <div class="giorno">Lunedì</div>
+        <div class="giorno">Martedì</div>
+        <div class="giorno">Mercoledì</div>
+        <div class="giorno">Giovedì</div>
+        <div class="giorno">Venerdì</div>
+
+        <!-- numeri ore -->
+        <div class="ora ora-1">1</div>
+        <div class="ora ora-2">2</div>
+        <div class="ora ora-3">3</div>
+        <div class="ora ora-4">4</div>
+        <div class="ora ora-5">5</div>
+        <div class="ora ora-6">6B</div>
+        <div class="ora ora-7">6T</div>
+        <div class="ora ora-8">7</div>
+        <div class="ora ora-9">8</div>
+        <div class="ora ora-10">9</div>
+
+        <!-- materie -->
+        <div class="materia inglese inglese-1" onclick="apriDettagli('INGLESE', 'ALPAN Antonella', 'III - ATRIO SUD')">INGLESE <br>ALPAN Antonella <br>III - ATRIO SUD</div>
+        <div class="materia inglese inglese-2" onclick="apriDettagli('INGLESE', 'ALPAN Antonella', 'III - ATRIO SUD')">INGLESE <br>ALPAN Antonella <br>III - ATRIO SUD</div>
+        <div class="materia inglese inglese-3" onclick="apriDettagli('INGLESE', 'ALPAN Antonella', 'III - ATRIO SUD')">INGLESE <br>ALPAN Antonella <br>III - ATRIO SUD</div>
+        <div class="materia italiano italiano-1" onclick="apriDettagli('ITALIANO', 'PACIOCCO Sandro', 'III - ATRIO SUD')">ITALIANO <br>PACIOCCO Sandro <br>III - ATRIO SUD</div>
+        <div class="materia italiano italiano-2" onclick="apriDettagli('ITALIANO', 'PACIOCCO Sandro', 'III - ATRIO SUD')">ITALIANO <br>PACIOCCO Sandro <br>III - ATRIO SUD</div>
+        <div class="materia matematica matematica-1" onclick="apriDettagli('MATEMATICA', 'RAINERO Paola', 'III - ATRIO SUD')">MATEMATICA <br>RAINERO Paola <br>III - ATRIO SUD</div>
+        <div class="materia matematica matematica-2" onclick="apriDettagli('MATEMATICA', 'RAINERO Paola', 'III - ATRIO SUD')">MATEMATICA <br>RAINERO Paola <br>III - ATRIO SUD</div>
+        <div class="materia matematica matematica-3" onclick="apriDettagli('MATEMATICA', 'RAINERO Paola', 'III - ATRIO SUD')">MATEMATICA <br>RAINERO Paola <br>III - ATRIO SUD</div>
+        <div class="materia matematica matematica-4" onclick="apriDettagli('MATEMATICA', 'RAINERO Paola', 'III - ATRIO SUD')">MATEMATICA <br>RAINERO Paola <br>III - ATRIO SUD</div>
+        <div class="materia reti reti-1" onclick="apriDettagli('SISTEMI E RETI', 'FRANCO Jacopo', 'III - ATRIO SUD')">SISTEMI E RETI <br>FRANCO Jacopo <br>III - ATRIO SUD</div>
+        <div class="materia reti reti-2" onclick="apriDettagli('SISTEMI E RETI', 'FRANCO Jacopo', 'III - ATRIO SUD, INFO 6')">SISTEMI E RETI <br>FRANCO Jacopo <br>III - ATRIO SUD, INFO 6</div>
+        <div class="materia storia storia-1" onclick="apriDettagli('STORIA', 'PACIOCCO Sandro', 'III - ATRIO SUD')">STORIA <br>PACIOCCO Sandro <br>III - ATRIO SUD</div>
+        <div class="materia storia storia-2" onclick="apriDettagli('STORIA', 'PACIOCCO Sandro', 'III - ATRIO SUD')">STORIA <br>PACIOCCO Sandro <br>III - ATRIO SUD</div>
+        <div class="materia tpsit tpsit-1" onclick="apriDettagli('TPSIT', 'FRANCO Jacopo', 'III - ATRIO SUD')">TPSIT <br>FRANCO Jacopo <br>III - ATRIO SUD</div>
+        <div class="materia tpsit tpsit-2" onclick="apriDettagli('TPSIT', 'FRANCO Jacopo', 'III - ATRIO SUD, INFO 6')">TPSIT <br>FRANCO Jacopo <br>III - ATRIO SUD, INFO 6</div>
+        <div class="materia informatica informatica-1" onclick="apriDettagli('INFORMATICA', 'TABASSO Alberto', 'III - ATRIO SUD, INFO 6')">INFORMATICA <br>TABASSO Alberto <br>III - ATRIO SUD, INFO 6</div>
+        <div class="materia informatica informatica-2" onclick="apriDettagli('INFORMATICA', 'TABASSO Alberto', 'III - ATRIO SUD')">INFORMATICA <br>TABASSO Alberto <br>III - ATRIO SUD</div>
+        <div class="materia informatica informatica-3" onclick="apriDettagli('INFORMATICA', 'TABASSO Alberto', 'III - ATRIO SUD, INFO 6')">INFORMATICA <br>TABASSO Alberto <br>III - ATRIO SUD INFO 6</div>
+        <div class="materia telecomunicazioni telecomunicazioni-1" onclick="apriDettagli('TELECOMUNICAZIONI', 'DE LISO Gioele', 'III - ATRIO SUD')">TELECOMUNICAZIONI <br>DE LISO Gioele <br>III - ATRIO SUD</div>
+        <div class="materia telecomunicazioni telecomunicazioni-2" onclick="apriDettagli('TELECOMUNICAZIONI', 'DE LISO Gioele', 'III - ATRIO SUD, LAB TELECOMUNICAZIONI')">TELECOMUNICAZIONI <br>DE LISO Gioele <br>III - ATRIO SUD, LAB TELECOMUNICAZIONI</div>
+        <div class="materia ginnastica ginnastica-1" onclick="apriDettagli('SCIENZE MOTORIE', 'CORSO Claudio', 'PALESTRA PICCOLA')">SCIENZE MOTORIE <br>CORSO Claudio <br>PALESTRA PICCOLA</div>
+        <div class="materia religione religione-1" onclick="apriDettagli('RELIGIONE / MAT. ALTERN.', 'FORNO Lorenzo', 'III - ATRIO SUD')">RELIGIONE / MAT. ALTERN. <br>FORNO Lorenzo <br>III - ATRIO SUD</div>
+        <div class="materia pranzo pranzo-1" onclick="apriDettagli('PAUSA PRANZO', 'CASALEGNO Ezio', 'III - ATRIO SUD\nORARIO: 12:45 - 13:12')">PAUSA PRANZO <br>CASALEGNO Ezio <br>III - ATRIO SUD</div>
+        <div class="null"></div>
+
+        <div class="void void-2"></div>
+        <div class="void void-3"></div>
+        <div class="void void-4"></div>
+        <div class="void void-5"></div>
+
+        <div id="modal-sfondo" onclick="chiudiModal()"></div>
+            <div id="modal">
+                <h2 id="modal-materia"></h2>
+                <p id="modal-docente"></p>
+                <p id="modal-aula"></p>
+                <button class="button1" onclick="chiudiModal()">Chiudi</button>
+            </div>
+    </div>
+</body>
+
+<!-- .contenitore_prova>.contenitore_figlio+.contenitore_figlio2|c -->
+</html>
